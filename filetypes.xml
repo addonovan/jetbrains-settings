@@ -1,0 +1,17 @@
+<application>
+  <component name="FileTypeManager" version="18">
+    <extensionMap>
+      <mapping pattern="index" type="AUTO_DETECTED" />
+      <mapping ext="geojson" type="JSON" />
+      <mapping pattern=".aws" type="PLAIN_TEXT" />
+      <mapping ext="response" type="TypeScript" />
+      <mapping ext="exception" type="TypeScript" />
+      <mapping pattern=".tsconfig" type="tsconfig" />
+      <removed_mapping ext="graphqlconfig" approved="true" type="JSON" />
+      <removed_mapping ext="ignore" approved="true" type="IgnoreLang file" />
+      <removed_mapping ext="sql" approved="true" type="DBN-SQL" />
+      <removed_mapping pattern=".env" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping pattern=".prettierignore" approved="true" type="Prettier File" />
+    </extensionMap>
+  </component>
+</application>

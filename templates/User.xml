@@ -1,0 +1,24 @@
+<templateSet group="User">
+  <template name="test-service" value="import { BeforeAll, Before } from '@cucumber/cucumber';&#10;import { Repository } from 'typeorm';&#10;import { Test, TestingModule } from '@nestjs/testing';&#10;import { getRepositoryToken } from '@nestjs/typeorm';&#10;import { clearMock } from '../../../test/global/utils.spec';&#10;&#10;import { $EntityName$ } from './entities/$ModuleName$.entity';&#10;import { $EntityName$sService } from './$ModuleName$s.service';&#10;&#10;let service: $EntityName$sService;&#10;const mockRepository = {} as Repository&lt;$EntityName$&gt;;&#10;&#10;BeforeAll(async function () {&#10;  const module: TestingModule = await Test.createTestingModule({&#10;    providers: [&#10;      {&#10;        provide: getRepositoryToken($EntityName$),&#10;        useValue: mockRepository,&#10;      },&#10;      $EntityName$sService,&#10;    ],&#10;  }).compile();&#10;&#10;  service = module.get&lt;$EntityName$sService&gt;($EntityName$sService);&#10;});&#10;&#10;Before(function (this: HasCalls&lt;'$EntityName$'&gt; &amp; HasResult&lt;'$EntityName$', unknown&gt;) {&#10;  clearMock(mockRepository);&#10;  this.calls = { ...this.calls, $EntityName$: {} } as any;&#10;  this.result = { ...this.result, $EntityName$: {} } as any;&#10;});&#10;" description="testing outline for services" toReformat="false" toShortenFQNames="true">
+    <variable name="EntityName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ModuleName" expression="lowercaseAndDash(EntityName)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="injrep" value="@InjectRepository($ClassName$) $END$repository: Repository&lt;$ClassName$&gt;," description="Inject a Repository for a type" toReformat="false" toShortenFQNames="true">
+    <variable name="ClassName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="value-provider" value="import { Inject, Provider } from '@nestjs/common';&#10;&#10;const $SCREAM_NAME$_TAG = '@atmz/$library$/$SCREAM_NAME$_TAG';&#10;export const Inject$UpperName$ = () =&gt; Inject($SCREAM_NAME$_TAG);&#10;&#10;export function $UpperName$Provider($lowerName$: unknown): Provider {&#10;  return {&#10;    provide: $SCREAM_NAME$_TAG,&#10;    useValue: $lowerName$,&#10;  };&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="library" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="lowerName" expression="camelCase(substringBefore(fileName(), &quot;.&quot;))" defaultValue="" alwaysStopAt="false" />
+    <variable name="UpperName" expression="capitalize(lowerName)" defaultValue="" alwaysStopAt="false" />
+    <variable name="SCREAM_NAME" expression="capitalizeAndUnderscore(lowerName)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
