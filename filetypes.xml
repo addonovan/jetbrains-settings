@@ -4,6 +4,7 @@
       <mapping pattern="index" type="AUTO_DETECTED" />
       <mapping ext="geojson" type="JSON" />
       <mapping pattern=".aws" type="PLAIN_TEXT" />
+      <mapping ext="pegjs" type="PLAIN_TEXT" />
       <mapping ext="response" type="TypeScript" />
       <mapping ext="exception" type="TypeScript" />
       <mapping pattern=".tsconfig" type="tsconfig" />
