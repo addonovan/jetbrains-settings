@@ -5,6 +5,7 @@
       <mapping ext="geojson" type="JSON" />
       <mapping pattern=".aws" type="PLAIN_TEXT" />
       <mapping ext="pegjs" type="PLAIN_TEXT" />
+      <mapping ext="shp" type="PLAIN_TEXT" />
       <mapping ext="dat" type="PLAIN_TEXT" />
       <mapping ext="response" type="TypeScript" />
       <mapping ext="exception" type="TypeScript" />
