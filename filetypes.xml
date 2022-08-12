@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping pattern="index" type="AUTO_DETECTED" />
       <mapping ext="geojson" type="JSON" />
+      <mapping pattern=".repl.history" type="PLAIN_TEXT" />
       <mapping pattern=".aws" type="PLAIN_TEXT" />
       <mapping ext="pegjs" type="PLAIN_TEXT" />
       <mapping ext="shp" type="PLAIN_TEXT" />
