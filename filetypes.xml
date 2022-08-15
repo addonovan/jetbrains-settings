@@ -5,6 +5,7 @@
       <mapping ext="geojson" type="JSON" />
       <mapping pattern=".repl.history" type="PLAIN_TEXT" />
       <mapping pattern=".aws" type="PLAIN_TEXT" />
+      <mapping pattern=".env" type="PLAIN_TEXT" />
       <mapping ext="pegjs" type="PLAIN_TEXT" />
       <mapping ext="shp" type="PLAIN_TEXT" />
       <mapping ext="dat" type="PLAIN_TEXT" />
@@ -14,7 +15,6 @@
       <removed_mapping ext="graphqlconfig" approved="true" type="JSON" />
       <removed_mapping ext="ignore" approved="true" type="IgnoreLang file" />
       <removed_mapping ext="sql" approved="true" type="DBN-SQL" />
-      <removed_mapping pattern=".env" approved="true" type="PLAIN_TEXT" />
       <removed_mapping pattern=".prettierignore" approved="true" type="Prettier File" />
     </extensionMap>
   </component>
