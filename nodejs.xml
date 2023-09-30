@@ -7,7 +7,7 @@
       <version-cache last-modified="0" />
     </local-interpreter>
     <local-interpreter path="/usr/bin/node">
-      <version-cache version="16.16.0" last-modified="1657195538000" />
+      <version-cache version="16.20.2" last-modified="1691533462000" />
     </local-interpreter>
   </component>
 </application>
